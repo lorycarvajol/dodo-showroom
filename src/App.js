@@ -49,14 +49,16 @@ const App = () => {
             wheelRouter("blog-2", "projet-3");
             break;
             case url + "blog-2":
-          wheelRouter("blog-3", "projet-1");
+          wheelRouter("blog-3", "blog-1");
           break;
-          
+          case url + "blog-3":
+            wheelRouter("contact", "blog-2");
+            break;
         
         case url + "contact":
           if (e.wheelDeltaY > 0) {
             setTimeout(() => {
-              history.push("projet-2");
+              history.push("blog-3");
             }, 500);
           }
           break;

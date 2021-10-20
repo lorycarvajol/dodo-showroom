@@ -63,16 +63,13 @@ const Project = (props) => {
       transition={transition}
       variants={variants}
     >
-      <div className="project-content" >
-      
-      
+      <div className="project-content" >       
         <h1>{project.title}</h1>
         <p>
-        <video autoPlay loop
-            >
+        <video autoPlay loop>
           <source src={Terre} type="video/mp4"/>
-        </video>{project.subtitle}</p>
-        
+        </video>
+        {project.subtitle}</p>
       </div>
       <motion.div 
         className="img-content"

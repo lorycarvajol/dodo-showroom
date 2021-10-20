@@ -19,9 +19,16 @@
       min-width: 100%;
     }
 
-    a {
+    a {    
       padding: 1rem;
-      transition: 1.1s ease-out;
+      transition: 1.1s ease-out;     
     }
+  }
+  .fa-instagram,
+  .fa-youtube,
+  .fa-facebook-f {
+    font-size: 35px;
+    color: $color-2;
+    text-shadow: 2px 2px 2px rgba(148, 148, 148, 0.336), 3px 3px 3px rgba(255, 255, 255, 0.555);
   }
 }

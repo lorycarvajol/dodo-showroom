@@ -11,7 +11,7 @@ export const Blog1 = () => {
   return (
     <main>
       <Mouse />
-      <div className="project">
+      <div className="blog">
       <video autoPlay loop
             style={{
                position: "absolute",
@@ -34,7 +34,7 @@ export const Blog2 = () => {
   return (
     <main>
       <Mouse />
-      <div className="project">
+      <div className="blog">
       <video autoPlay loop
             style={{
                position: "absolute",
@@ -58,7 +58,7 @@ export const Blog3 = () => {
   return (
     <main>blog
       <Mouse />
-      <div className="project">
+      <div className="blog">
       <video autoPlay loop
             style={{
                position: "absolute",

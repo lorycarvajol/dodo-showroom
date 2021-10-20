@@ -10,8 +10,8 @@ const Navigation = () => {
           <li>accueil</li>
         </NavLink>
 
-        <li className="nav-portfolio">Sites
-          <ul className="nav-projects">
+        <li className="nav-site">Sites
+          <ul className="nav-sites">
             <NavLink to="/projet-1" activeClassName="nav-active" className="hover">
               <li>Site n° 1</li>
             </NavLink>
@@ -25,8 +25,8 @@ const Navigation = () => {
           </ul>
         </li>
 
-        <li className="nav-portfolio">Blogs
-          <ul className="nav-projects">
+        <li className="nav-blog">Blogs
+          <ul className="nav-blogs">
             <NavLink to="/blog-1" activeClassName="nav-active" className="hover">
               <li>Instagram Doryanne</li>
             </NavLink>

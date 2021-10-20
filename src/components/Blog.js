@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { blogsData } from "../data/blogsData";
 import { motion } from "framer-motion";
+import Terre from "../../src/pages/video/terre.mp4";
 
 const Blog = (props) => {
   const [currentBlog] = useState(blogsData);
@@ -54,16 +55,19 @@ const Blog = (props) => {
 
   return (
     <motion.div
-      className="project-main"
+      className="blog-main"
       initial="initial"
       animate="visible"
       exit="exit"
       transition={transition}
       variants={variants}
     >
-      <div className="project-content">
+      <div className="blog-content">
         <h1>{blog.title}</h1>
-        <p>{blog.subtitle}</p>
+        <p>
+        <video autoPlay loop>
+          <source src={Terre} type="video/mp4"/>
+        </video>{blog.subtitle}</p>
         
         
       </div>
@@ -79,8 +83,7 @@ const Blog = (props) => {
             <h3>{blog.title}</h3>
             <p>{blog.infos}</p>
           </span>
-          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-          <div class="elfsight-app-ff7e5054-fe58-4dcb-95a9-78472b1ac4f5"></div>
+          
         </div>
         <div className="button-container">
           <a href={blog.link} target="_blank" rel="noopener noreferrer" className="hover">

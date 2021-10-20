@@ -28,7 +28,7 @@ const SocialNetwork = () => {
             rel="noopener noreferrer" className="hover" onMouseOver={anim}>
                <li><i className="fab fa-youtube"></i></li>
             </a>
-            <a href="https://www.instagram.com/__doryanne/?hl=fr" target="_blank" 
+            <a href="https://www.instagram.com/__doryanne/?hl=fr" target="_blank"  
             rel="noopener noreferrer" className="hover" onMouseOver={anim}>
                <li><i className="fab fa-instagram"></i></li>
             </a>

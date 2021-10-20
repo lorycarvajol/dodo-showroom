@@ -3,6 +3,7 @@
   width: 100vw;
   position: absolute;
   
+  
 
   &:after {
     content: '';
@@ -51,8 +52,10 @@
       h1 {
         font-size: 3.7rem;
         position: relative;
-        font-family: $font-2;
-        color: $black;
+        font-family: $font-3;
+        color: $color-1;
+        letter-spacing: 5px;
+        text-shadow:  2px 2px 2px $black;
 
         @media screen and (max-width: 650px){
           font-size: 2rem;
@@ -89,8 +92,9 @@
         }
       }
       h2 {
-        font-size: 4.2rem;
+        font-size: 4rem;
         font-weight: 100;
+        
 
         @media screen and (max-width: 650px){
           font-size: 2rem;

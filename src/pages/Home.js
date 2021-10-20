@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import Starlight from './video/BlueStar.mp4';
 import Holist from './images/Holistiqua.png';
 
+
 const Home = () => {
 
   const variants = {
@@ -28,6 +29,7 @@ const Home = () => {
   };
 
   return (
+    
     <main>
       <Mouse />
       <motion.div
@@ -48,10 +50,11 @@ const Home = () => {
         </video>
         <Navigation />
         <SocialNetwork />
+        
         <div className="home-main">
           <div className="main-content">
             <motion.h1 drag onDragEnd   dragConstraints={{ left: -250, right: 950, top: -200, bottom: 250 }}>
-              <img src={Holist} alt="Titre site"/>
+              <h1>Holistiqua</h1>
             </motion.h1>
             <motion.h2 drag onDragEnd dragConstraints={{ left: -250, right: 1250, top: -200, bottom: 250 }}>
               <DynamicText />
