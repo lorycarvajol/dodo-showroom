@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { blogsData } from "../data/blogsData";
 import { motion } from "framer-motion";
 import Terre from "../../src/pages/video/terre.mp4";
+import Star from "../../src/pages/images/stareye.png";
 
 const Blog = (props) => {
   const [currentBlog] = useState(blogsData);
@@ -63,11 +64,12 @@ const Blog = (props) => {
       variants={variants}
     >
       <div className="blog-content">
-        <h1>{blog.title}</h1>
-        <p>
-        <video autoPlay loop>
+      
+      <video autoPlay loop>
           <source src={Terre} type="video/mp4"/>
-        </video>{blog.subtitle}</p>
+        </video>
+        <h1>{blog.title}</h1>
+        <p>{blog.subtitle}</p>
         
         
       </div>
@@ -91,7 +93,7 @@ const Blog = (props) => {
           </a>
         </div>
       </motion.div>
-      <span className="random-circle" style={{ left, top, transform: size }}></span>
+      <span className="random-circle" style={{ left, top, transform: size }}><img src={Star}/></span>
     </motion.div>
   );
 };

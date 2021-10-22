@@ -4,7 +4,7 @@ import ButtonsBottom from '../components/ButtonsBottom';
 import Logo from '../components/Logo';
 import Project from '../components/Project';
 import Mouse from '../components/Mouse';
-import Starlight from './video/BlueStar.mp4';
+import Starlight from './video/BlueStar2.mp4';
 
 
 

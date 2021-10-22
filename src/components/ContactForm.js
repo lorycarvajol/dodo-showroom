@@ -105,7 +105,7 @@ const ContactForm = () => {
           name="name"
           required
           onChange={(e) => setName(e.target.value)}
-          placeholder="nom *"
+          placeholder="Nom *:"
           value={name}
         />
         <div className="email-content">
@@ -116,7 +116,7 @@ const ContactForm = () => {
             name="email"
             required
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="email *"
+            placeholder="Email *:"
             value={email}
           />
         </div>
@@ -124,7 +124,7 @@ const ContactForm = () => {
           id="message"
           name="message"
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="message *"
+          placeholder="Message *:"
           value={message}
           required
         />

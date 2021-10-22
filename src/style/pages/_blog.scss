@@ -5,14 +5,27 @@
  
    &:after {
      content: "";
-     height: 340px;
-     width: 340px;
-     border: 1px solid $color-2;
+     height: 380px;
+     width: 420px;
      border-radius: 50%;
+     box-shadow: 2px 2px 10px 10px rgba(238, 130, 238, 0.281), 2px 2px 10px 10px rgba(238, 130, 238, 0.281) inset;
      position: absolute;
-     bottom: -200px;
+     bottom: -150px;
      left: -80px;
      z-index: 1;
+     animation: circleDownAnim 16s infinite alternate;
+     background-image: url(../../pages/images/Consvio.png);
+     background-size: cover;
+     backdrop-filter: brightness(250%);
+    
+    @keyframes circleDownAnim {
+      50% {
+        transform: scale(0.7) rotateY(90deg);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
  
      @media screen and (max-width: 810px){
        height: 200px;
@@ -28,7 +41,7 @@
    .navigation {
      top: 5px;
      left: 60%;
-     color: rgb(32, 213, 245);
+     
      font-size: 1.1rem;
      line-height: 20px;
      transform: translateY(-100%);
@@ -60,7 +73,7 @@
      left: 50%;
      transform: translateX(-50%);
      transform: scale(0);
-     animation: logoBlog 2s ease forwards;
+     animation: logoBlog 4s ease forwards;
    
      @keyframes logoBlog {
        to {
@@ -96,16 +109,47 @@
          align-items: center;
          padding: 0 .5rem;
        }
- 
+       video {
+        height: 380px;
+        width: 380px;
+        object-fit: cover;
+        
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: 93px;
+        z-index: 0;
+        opacity: 50%;
+        
+      }
+      &:after {
+        content: "";
+        height: 340px;
+        width: 340px;
+        box-shadow: 0px 0px 100px 60px rgba(121, 184, 221, 0) ;
+       
+        background-color: rgba(91, 222, 245, 0);
+        border-radius: 50%;
+        position: absolute;
+        top:0.5%;
+        left: 6%;
+
+        @media screen and (max-width: 1220px){
+          
+          top:0px;
+          left: 5%;
+        } 
+
+      }
        h1 {
          font-size: 3rem;
          margin-bottom: 12px;
          font-family: $font-2;
-         color: $color-2;
+         color: $ice;
          transform: scaleX(0);
          animation: transformTitle 1.5s ease forwards;
          transform-origin: 150%;
-         text-shadow: 2px 2px 2px rgb(212, 200, 230), 4px 4px 4px rgb(35, 8, 77) ;
+         text-shadow: 2px 2px 2px rgb(49, 67, 80), 4px 4px 4px rgb(94, 213, 243) ;
          @media screen and (max-width: 810px){
            font-size: 2rem;
          }
@@ -120,54 +164,43 @@
          }
        }
        p {
+         position: absolute;
+         margin-left: 25vh;
+         width: 400px;
+         text-shadow: 2px 2px 2px rgb(49, 49, 49), 4px 4px 4px rgb(204, 199, 211) ;
          margin-bottom: 30px;
-         color: white;
+         color: $color-1;
          font-size: 1.2rem;
-         z-index: 2;
+         z-index: 10;
  
+
+         @media screen and (max-width: 1920px){
+          
+          margin-left: 12vh;
+        }
          @media screen and (max-width: 700px){
            margin: 0;
+           margin-left: 20vh;
          }
          @media screen and (max-width: 450px){
            font-size: .9rem;
          }
          
-         &:after {
-           content: "";
-           height: 340px;
-           width: 340px;
-           background: rgba(131, 234, 252, 0.103);
-           border-radius: 50%;
-           position: absolute;
-           top: -28px;
-           left: 70px;
-           z-index: 1;
- 
+        
            @media screen and (max-width: 810px){
              height: 220px;
              width: 220px;
              left: -30px;
            }
-         }
+         
        }
-       video {
-        height: 320px;
-        width: 320px;
-        object-fit: cover;
-        overflow: hidden;
-        border-radius: 50%;
-        position: absolute;
-        top: -30px;
-        left: 73px;
-        z-index: 0;
-        opacity: 60%;
 
         @media screen and (max-width: 810px){
           height: 220px;
           width: 220px;
           left: -30px;
         }
-      }
+      
 
        li {
          font-size: 1.5rem;
@@ -284,15 +317,10 @@
     position: absolute;
     height: 400px;
     width: 400px;
-   
-    background: rgba(134, 255, 255, 0.089);
     border-radius: 50%;
     z-index: 1;
     animation: circleAnim 16s infinite alternate;
     
-      
-    
-
     @keyframes circleAnim {
       50% {
         transform: scale(0.7);

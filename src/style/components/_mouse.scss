@@ -1,9 +1,9 @@
 .cursor {
-  background: url('/./src/pages/images/constelation-violette.png') no-repeat 60% 50%/cover !important;
+  
   width: 62px;
   height: 62px;
-  border: 1px solid rgb(130, 189, 238);
-  box-shadow: 6px 6px 6px rgb(180, 248, 245);
+  
+  box-shadow: 10px 10px 20px 5px rgb(180, 248, 245), 15px 15px 20px 10px rgb(61, 71, 71) ;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -13,7 +13,7 @@
   transition: top 160ms ease-out;
   transition: left 160ms ease-out;
   z-index: 2;
-  backdrop-filter: brightness(115%);
+  backdrop-filter: brightness(250%);
   
 }
 .cursor.hovered {

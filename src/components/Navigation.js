@@ -27,13 +27,13 @@ const Navigation = () => {
 
         <li className="nav-blog">Blogs
           <ul className="nav-blogs">
-            <NavLink to="/blog-1" activeClassName="nav-active" className="hover">
+            <NavLink to="/blog-1" activeClassName="nav-active2" className="hover">
               <li>Instagram Doryanne</li>
             </NavLink>
-            <NavLink to="/blog-2" activeClassName="nav-active" className="hover">
+            <NavLink to="/blog-2" activeClassName="nav-active2" className="hover">
               <li>Instagram La Guidance</li>
             </NavLink>
-            <NavLink to="/blog-3" activeClassName="nav-active" className="hover">
+            <NavLink to="/blog-3" activeClassName="nav-active2" className="hover">
               <li>Blog</li>
             </NavLink>
             

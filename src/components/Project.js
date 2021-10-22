@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
-import Terre from "../../src/pages/video/terre.mp4";
+
+import Star from "../../src/pages/images/sleepsun.png";
+
+
 
 
 const Project = (props) => {
@@ -63,13 +66,12 @@ const Project = (props) => {
       transition={transition}
       variants={variants}
     >
-      <div className="project-content" >       
+      <div className="project-content" > 
+
+          
         <h1>{project.title}</h1>
-        <p>
-        <video autoPlay loop>
-          <source src={Terre} type="video/mp4"/>
-        </video>
-        {project.subtitle}</p>
+        <p>{project.subtitle}</p>
+        
       </div>
       <motion.div 
         className="img-content"
@@ -91,7 +93,9 @@ const Project = (props) => {
           </a>
         </div>
       </motion.div>
-      <span className="random-circle" style={{ left, top, transform: size }}></span>
+      <span className="random-circle" 
+      
+      style={{ left, top, transform: size }}> <img src={Star}/></span>
     </motion.div>
   );
 };
