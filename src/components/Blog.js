@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { blogsData } from "../data/blogsData";
 import { motion } from "framer-motion";
-import Terre from "../../src/pages/video/terre.mp4";
+import { ElfsightWidget } from "react-elfsight-widget";
 import Star from "../../src/pages/images/stareye.png";
 
 const Blog = (props) => {
@@ -65,9 +65,7 @@ const Blog = (props) => {
     >
       <div className="blog-content">
       
-      <video autoPlay loop>
-          <source src={Terre} type="video/mp4"/>
-        </video>
+      
         <h1>{blog.title}</h1>
         <p>{blog.subtitle}</p>
         
@@ -81,17 +79,12 @@ const Blog = (props) => {
         transition={{duration: 1.2}}
       >
         <div className="img-container hover">
-          <span>
-            <h3>{blog.title}</h3>
-            <p>{blog.infos}</p>
-          </span>
+          
+          <p><ElfsightWidget widgetID="b3071723-19df-43b6-a8a7-1213fa033ef1" /></p>
+          
           
         </div>
-        <div className="button-container">
-          <a href={blog.link} target="_blank" rel="noopener noreferrer" className="hover">
-            <span className="button">voir le site</span>
-          </a>
-        </div>
+        
       </motion.div>
       <span className="random-circle" style={{ left, top, transform: size }}><img src={Star}/></span>
     </motion.div>

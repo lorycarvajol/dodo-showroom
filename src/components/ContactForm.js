@@ -46,7 +46,7 @@ const ContactForm = () => {
           // your service ID
           "service_sr9mzsh",
           // your template ID
-          "template_nr47kdn",
+          "template_9xxlqil",
           {
             name,
             email,

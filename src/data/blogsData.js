@@ -1,12 +1,19 @@
+import React from 'react';
+import { ElfsightWidget } from 'react-elfsight-widget';
+
 export const blogsData = [
    {
      id: 1,
      title: "Doryanne",
      subtitle: "thérapeute holistique,praticienne et enseignante énergétique ",
      
-     infos:
-       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-     img: "",
+      //affichage ElfsightWidget dans contenu
+      content: <ElfsightWidget
+      widgetID="b3071723-19df-43b6-a8a7-1213fa033ef1"
+      />,
+
+
+
      link: "https://doryanne-therapeuteholistique.com/",
    },
    {
