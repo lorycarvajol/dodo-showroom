@@ -14,7 +14,7 @@ export const blogsData = [
 
 
 
-     link: "https://doryanne-therapeuteholistique.com/",
+     link: "https://www.instagram.com/__doryanne/?hl=fr",
    },
    {
      id: 2,
@@ -36,15 +36,6 @@ export const blogsData = [
      img: "",
      link: "",
    },
-   /*{
-     id: 4,
-     title: "Creative Dev",
-     date: "Juillet 2020",
-     languages: ["Vue", "Php"],
-     infos:
-       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-     img: "./assets/img/projet-4.jpg",
-     link: "http://www.google.com",
-   },*/
+   
  ];
  

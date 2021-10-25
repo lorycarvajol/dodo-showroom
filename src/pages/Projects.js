@@ -15,10 +15,11 @@ export const Project1 = () => {
       <div className="project">
       <video autoPlay loop
             style={{
-               position: "absolute",
-               width: "100%",             
-               bottom: "0px",
-               objectFit: "cover"
+              position: "fixed",
+              width: "100%",  
+              height: "100%",           
+              bottom: "0px",
+              objectFit: "cover",
             }}>
           <source src={Starlight} type="video/mp4"/>
         </video>      

@@ -6,7 +6,6 @@ import Blog from '../components/Blog';
 import Mouse from '../components/Mouse';
 import Starlight from './video/BlueStar2.mp4';
 
-
 export const Blog1 = () => {
   return (
     <main>
@@ -14,10 +13,11 @@ export const Blog1 = () => {
       <div className="blog">
       <video autoPlay loop
             style={{
-               position: "absolute",
-               width: "100%",             
-               bottom: "0px",
-               objectFit: "cover"
+              position: "fixed",
+              width: "100%",  
+              height: "100%",           
+              bottom: "0px",
+              objectFit: "cover",
             }}>
           <source src={Starlight} type="video/mp4"/>
         </video>      
@@ -35,16 +35,18 @@ export const Blog2 = () => {
     <main>
       <Mouse />
       <div className="blog">
-      <video autoPlay loop
+        <div className="videoContainer">
+          <video autoPlay loop
             style={{
-               position: "absolute",
-               width: "100%",             
-               bottom: "0px",
-               objectFit: "cover"
+              position: "fixed",
+              width: "100%",  
+              height: "100%",           
+              bottom: "0px",
+              objectFit: "cover",              
             }}>
-          <source src={Starlight} type="video/mp4"/>
-        </video>
-
+            <source src={Starlight} type="video/mp4"/>
+          </video>
+        </div>
         <Navigation />
         <Logo />
         <Blog blogNumber={1} />
@@ -61,15 +63,14 @@ export const Blog3 = () => {
       <div className="blog">
       <video autoPlay loop
             style={{
-               position: "absolute",
-               width: "100%",             
+               position: "fixed",
+               width: "100%",  
+               height: "100%",           
                bottom: "0px",
-               objectFit: "cover",
-               
+               objectFit: "cover",              
             }}>
           <source src={Starlight} type="video/mp4"/>
         </video>
-
         <Navigation />
         <Logo />
         <Blog blogNumber={2} />

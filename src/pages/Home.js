@@ -6,7 +6,7 @@ import DynamicText from "../components/DynamicText";
 import Mouse from "../components/Mouse";
 import { motion } from "framer-motion";
 import Starlight from './video/BlueStar.mp4';
-import Holist from './images/Holistiqua.png';
+
 
 
 const Home = () => {
@@ -41,10 +41,11 @@ const Home = () => {
       >    
         <video autoPlay loop
             style={{
-               position: "absolute",
-               width: "100%",             
-               bottom: "0px",
-               objectFit: "cover"
+              position: "fixed",
+              width: "100%",  
+              height: "100%",           
+              bottom: "0px",
+              objectFit: "cover",
             }}>
           <source src={Starlight} type="video/mp4"/>
         </video>

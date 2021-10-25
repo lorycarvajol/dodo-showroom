@@ -63,13 +63,9 @@ const Blog = (props) => {
       transition={transition}
       variants={variants}
     >
-      <div className="blog-content">
-      
-      
+      <div className="blog-content">    
         <h1>{blog.title}</h1>
-        <p>{blog.subtitle}</p>
-        
-        
+        <p>{blog.subtitle}</p>     
       </div>
       <motion.div 
         className="img-content"
@@ -78,11 +74,8 @@ const Blog = (props) => {
         variants={imgAnim}
         transition={{duration: 1.2}}
       >
-        <div className="img-container hover">
-          
-          <p><ElfsightWidget widgetID="b3071723-19df-43b6-a8a7-1213fa033ef1" /></p>
-          
-          
+        <div className="img-container hover">          
+          <p><ElfsightWidget widgetID="b3071723-19df-43b6-a8a7-1213fa033ef1" /></p>         
         </div>
         
       </motion.div>

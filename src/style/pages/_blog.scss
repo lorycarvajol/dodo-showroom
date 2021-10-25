@@ -2,7 +2,7 @@
    position: absolute;
    height: 100vh;
    width: 100vw;
- 
+  
    &:after {
      content: "";
      height: 380px;
@@ -37,7 +37,17 @@
        left : -500px;
      }
    }
- 
+   .videoContainer {
+     display: flex;
+     height: auto;
+     video {
+       object-fit: cover;
+
+       @media screen and (max-width: 1160px){
+        height: 100%;
+      }
+     }
+   }
    .navigation {
      top: 5px;
      left: 60%;

@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ArrowsR from "../pages/images/flêche.png"
+import ArrowsL from "../pages/images/flêcheG.png"
 
 const ButtonsBottom = (props) => {
   return (
@@ -7,13 +9,26 @@ const ButtonsBottom = (props) => {
       <div className="sb-main">
         {props.left && (
           <NavLink to={props.left} className="left hover">
-            <span>&#10092;</span>
+            <span>
+            <img src={ArrowsL} alt="arrow"              
+              style={{
+                width: "60px",             
+                bottom: "0px",
+                objectFit: "cover"
+             }}/>
+            </span>
           </NavLink>
         )}
         <p className="center">scroll</p>
         {props.right && (
           <NavLink to={props.right} className="right hover">
-            <span>&#10093;</span>
+            <span>
+              <img src={ArrowsR} alt="arrow"               
+              style={{               
+                width: "60px",             
+                bottom: "0px",
+                objectFit: "cover"
+             }}/></span>
           </NavLink>
         )}
       </div>
