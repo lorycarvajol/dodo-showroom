@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
 
-import Star from "../../src/pages/images/sleepsun.png";
+import Star from "../../src/pages/images/stareye.png";
 
 
 

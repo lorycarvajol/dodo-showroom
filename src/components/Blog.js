@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { blogsData } from "../data/blogsData";
 import { motion } from "framer-motion";
-import { ElfsightWidget } from "react-elfsight-widget";
 import Star from "../../src/pages/images/stareye.png";
 
 const Blog = (props) => {
@@ -10,9 +9,9 @@ const Blog = (props) => {
   const blog = currentBlog[props.blogNumber];
 
   // random background circle
-  let left = Math.floor(Math.random() * 200 + 700) + "px";
-  let top = Math.floor(Math.random() * 200 + 150) + "px";
-  let size = "scale(" + (Math.random() + 0.7) + ")";
+  let left = Math.floor(Math.random() * 800 + 850) + "px";
+  let top = Math.floor(Math.random() * 200 + 250) + "px";
+  let size = "scale(" + (Math.random() + 0.8) + ")";
 
   const variants = {
     initial: {
@@ -75,7 +74,7 @@ const Blog = (props) => {
         transition={{duration: 1.2}}
       >
         <div className="img-container hover">          
-          <p><ElfsightWidget widgetID="b3071723-19df-43b6-a8a7-1213fa033ef1" /></p>         
+          <p>{blog.content}</p>         
         </div>
         
       </motion.div>

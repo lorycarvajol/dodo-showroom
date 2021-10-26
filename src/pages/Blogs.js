@@ -4,7 +4,7 @@ import ButtonsBottom from '../components/ButtonsBottom';
 import Logo from '../components/Logo';
 import Blog from '../components/Blog';
 import Mouse from '../components/Mouse';
-import Starlight from './video/BlueStar2.mp4';
+import Starlight from './video/BlueStar.mp4';
 
 export const Blog1 = () => {
   return (
