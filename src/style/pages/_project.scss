@@ -251,8 +251,10 @@
           }
         }
         span {
+          
           position: absolute;
-          bottom: 20px;
+          background-color: rgba(54, 54, 54, 0.404);
+          bottom: -5px;
           left: 0;
           width: 100%;
           padding: 1rem;
@@ -264,9 +266,12 @@
           transform: translateY(200px);
           color: white;
 
-          h3 {
-            padding-bottom: 10px;
-            color: rgb(48, 195, 228);
+          
+          p {
+            font-size: 1.2rem;
+            color: white;
+            margin-top: 200px;
+            text-shadow: 1px 1px 1px grey;
           }
         }
       }

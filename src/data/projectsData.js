@@ -15,7 +15,7 @@ export const projectsData = [
    subtitle: "Plateforme holistique",
     
     infos:
-      "La guidance est l'idée de deux personnes, Doryanne (thérapeute holistique) et Nicolas (responsable je sait plus (demander à Nico)) pour créer une plateforme de prise de rendez vous Holistique et vente de produits artisanaux esoterique. Le but premier de cet plateforme est le partage et le professionnalisme, en sélectionnant soigneusement chaque praticien énergétique, medium ou astrologue, nous favorisons une vibration qui se dirige toujours dans la même direction, accompagnement bienveillant, sérieux et dans un seul but : votre élévation personnel. Vous retrouverez également une partie boutique ou chacun et chacune travaille de c'est main pour confectionner des produit esoterix afin de vous aider au quotidien.",
+      "La guidance est une Plateforme de prise de rendez-vous Holistique et vente de produits artisanaux ésoterique. Le but premier de cette plateforme est le partage et le professionnalisme, en sélectionnant soigneusement chaque praticien énergétique, medium ou astrologue, nous favorisons une vibration qui se dirige toujours dans la même direction, accompagnement bienveillant, sérieux et dans un seul but : votre élévation personnel. Vous retrouverez également une partie boutique de produit ésoterique afin de vous aider au quotidien.",
     img: "./assets/img/guidabce.jpg",
     link: "https://www.instagram.com/laguidance/",
   },

@@ -82,7 +82,7 @@ const Project = (props) => {
       >
         <div className="img-container hover">
           <span>
-            <h3>{project.title}</h3>
+            
             <p>{project.infos}</p>
           </span>
           <img src={project.img} alt={project.title} className="img" />
