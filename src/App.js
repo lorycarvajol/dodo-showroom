@@ -6,7 +6,6 @@ import  { Project1, Project2, Project3 } from './pages/Projects';
 import  { Blog1, Blog2, Blog3 } from './pages/Blogs';
 import { AnimatePresence } from 'framer-motion';
 
-
 const App = () => {
   const location = useLocation();
   let history = useHistory();
@@ -79,8 +78,7 @@ const App = () => {
         <Route exact path="/projet-3" component={Project3} />
         <Route exact path="/blog-1" component={Blog1} />
         <Route exact path="/blog-2" component={Blog2} />
-        <Route exact path="/blog-3" component={Blog3} />
-        
+        <Route exact path="/blog-3" component={Blog3} />        
         <Route exact path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>

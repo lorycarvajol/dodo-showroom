@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
-
 import Star from "../../src/pages/images/stareye.png";
-
-
-
 
 const Project = (props) => {
   const [currentProject] = useState(projectsData);
@@ -66,12 +62,9 @@ const Project = (props) => {
       transition={transition}
       variants={variants}
     >
-      <div className="project-content" > 
-
-          
+      <div className="project-content" >          
         <h1>{project.title}</h1>
-        <p>{project.subtitle}</p>
-        
+        <p>{project.subtitle}</p>       
       </div>
       <motion.div 
         className="img-content"
@@ -79,10 +72,9 @@ const Project = (props) => {
         animate="visible"
         variants={imgAnim}
         transition={{duration: 1.2}}
-      >
+      >     
         <div className="img-container hover">
-          <span>
-            
+          <span>           
             <p>{project.infos}</p>
           </span>
           <img src={project.img} alt={project.title} className="img" />

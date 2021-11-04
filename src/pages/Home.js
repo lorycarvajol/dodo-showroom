@@ -7,8 +7,6 @@ import Mouse from "../components/Mouse";
 import { motion } from "framer-motion";
 import Starlight from './video/BlueStar.mp4';
 
-
-
 const Home = () => {
 
   const variants = {

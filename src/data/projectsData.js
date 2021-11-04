@@ -22,8 +22,7 @@ export const projectsData = [
   {
     id: 3,
     title: "Linktree",
-    subtitle: "Mes divers liens",
-    
+    subtitle: "Mes divers liens",    
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
     img: "./assets/img/linktree.png",

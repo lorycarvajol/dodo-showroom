@@ -6,8 +6,6 @@ import Project from '../components/Project';
 import Mouse from '../components/Mouse';
 import Starlight from './video/BlueStar.mp4';
 
-
-
 export const Project1 = () => {
   return (
     <main>
